@@ -26,7 +26,7 @@
 // console.log(print);
 
 
-// foreach gabisa return.. jadi harus dibuat penampung
+// ---------- foreach gabisa return.. jadi harus dibuat penampung---------------
 // var array1 = ["a", "b", "c"];
 // var text = "";
 
@@ -46,7 +46,7 @@
 // console.log(found);
 
 
-// ternery operator
+// -------------ternery operator------------------------
 // let num = 2;
 // (num === 3) ? (console.log('true')) : (console.log('false'))
 
@@ -84,6 +84,20 @@ const names = [
 // console.log(filter);
 
 // level 3
+// let search = names.map(name => name === name.match('fahri'))
+// console.log(search);
 
-let search = names.filter(name => name === 'Mr. Fahri')
-console.log(search);
+// level 4
+// const names1 = ["Mr. Fahri", "Mr. Abdul", "Mrs. Josephhine"];
+// const names2 = ["Mr. Joseph", "Mr. Paul", "Mrs. Paula", "Mr. Hakim"];
+// const name3 = names1.concat(names2);
+
+// console.log(name3)
+
+// level 5
+var hasil = ' ';
+names.forEach(function(name) {
+    hasil += name + ','
+})
+
+console.log(hasil);
