@@ -17,10 +17,21 @@
 
 
 
-numbers = [1,4,7,9,10];
+// numbers = [1,4,7,9,10];
 
-var map = numbers.map( number => number * 2)
-var print = numbers.map(number => number);
-console.log(numbers)
-console.log(map)
-console.log(print);
+// var map = numbers.map( number => number * 2)
+// var print = numbers.map(number => number);
+// console.log(numbers)
+// console.log(map)
+// console.log(print);
+
+
+
+var array1 = ["a", "b", "c"];
+var text = "";
+
+array1.forEach(function(element) {
+  text += element + ",";
+});
+
+console.log(text)
