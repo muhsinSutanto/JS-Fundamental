@@ -70,5 +70,20 @@ const names = [
 // console.log(map);
 
 //level 1
-let filter = names.filter( name => name[2] == '.')
-console.log(filter);
+// let filter = names.filter( name => name[2] == '.')
+// console.log(filter);
+
+//level 2
+// let filter= names.map(name => {
+//     if(name[2] === '.') {return 'laki'} 
+//     else if (name[2] === 's') {
+//         return 'perempuan'
+//     }
+// })
+
+// console.log(filter);
+
+// level 3
+
+let search = names.filter(name => name === 'Mr. Fahri')
+console.log(search);
