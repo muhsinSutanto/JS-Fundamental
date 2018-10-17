@@ -84,8 +84,10 @@ const names = [
 // console.log(filter);
 
 // level 3
-// let search = names.map(name => name === name.match('fahri'))
-// console.log(search);
+let dicari = prompt('cari kata')
+let search = names.filter(name => name.toLocaleLowerCase().includes(dicari))
+document.write(`kata di cari adalah ${search}`)
+
 
 // level 4
 // const names1 = ["Mr. Fahri", "Mr. Abdul", "Mrs. Josephhine"];
@@ -95,9 +97,15 @@ const names = [
 // console.log(name3)
 
 // level 5
-var hasil = ' ';
-names.forEach(function(name) {
-    hasil += name + ','
-})
+// var hasil = ' ';
+// names.forEach(function(name) {
+//     hasil += name + ','
+// })
 
-console.log(hasil);
+// console.log(hasil);
+
+// var input = prompt('kata dicari');
+// var cari = prompt('kata dicari')
+
+
+
