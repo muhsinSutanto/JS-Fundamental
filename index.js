@@ -50,15 +50,15 @@
 // let num = 2;
 // (num === 3) ? (console.log('true')) : (console.log('false'))
 
-const names = [
-    "Mr. Fahri",
-    "Mr. Abdul",
-    "Mrs. Josephhine",
-    "Mr. Joseph",
-    "Mr. Paul",
-    "Mrs. Paula",
-    "Mr. Hakim"
-  ];
+// const names = [
+//     "Mr. Fahri",
+//     "Mr. Abdul",
+//     "Mrs. Josephhine",
+//     "Mr. Joseph",
+//     "Mr. Paul",
+//     "Mrs. Paula",
+//     "Mr. Hakim"
+//   ];
 
 //level 0
 // let result = " ";
@@ -84,9 +84,9 @@ const names = [
 // console.log(filter);
 
 // level 3
-let dicari = prompt('cari kata')
-let search = names.filter(name => name.toLocaleLowerCase().includes(dicari))
-document.write(`kata di cari adalah ${search}`)
+// let dicari = prompt('cari kata')
+// let search = names.filter(name => name.toLocaleLowerCase().includes(dicari))
+// document.write(`kata di cari adalah ${search}`)
 
 
 // level 4
@@ -97,12 +97,36 @@ document.write(`kata di cari adalah ${search}`)
 // console.log(name3)
 
 // level 5
-// var hasil = ' ';
-// names.forEach(function(name) {
-//     hasil += name + ','
-// })
 
-// console.log(hasil);
+const names = [
+    "Mr. Fahri",
+    null,
+    undefined,
+    "Mr. Abdul",
+    24,
+    "Mrs. Josephhine",
+    "Mr. Joseph",
+    "Mr. Paul",
+    32,
+    "Mrs. Paula",
+    7,
+    22,
+    "Mr. Hakim"
+  ];
+  
+
+let print = names.filter(name => {
+    return typeof name === 'string';
+})
+
+let name2 = ' '
+
+print.forEach(element => { 
+    name2 += element + ','
+    
+});
+
+console.log(name2);
 
 // var input = prompt('kata dicari');
 // var cari = prompt('kata dicari')
